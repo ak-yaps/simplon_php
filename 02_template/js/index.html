@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>JS - Révisions II</title>
+    <script src="app.js"></script>
+    <style>
+        body {
+            font-family: Avenir;
+            font-size: 16px;
+        }
+        body > :last-child {
+            margin-bottom: 300px;
+        }
+        .title {
+            color: dodgerblue;
+            font-size: 1.3rem;
+        }
+        p {
+            box-shadow: -0.9px 0.1px 6.1px 0.2px #696666;
+            padding: 10px;
+            max-width: 500px;
+            text-align: justify;
+            border-radius: .1rem;
+        }
+        .is-hidden {
+            display: none;
+        }
+    </style>
+    <script>
+        var a = false, b = 0, c = NaN, d = '', e = null, f, arr = [0.1, 21, 313, 45, 5000000];
+        product = {
+            name: "random stuff",
+            price: 123,
+            available: true,
+            colors: ["green", "yellow", "red"]
+        }
+        // ci-dessous, what's log ?!! voir app.js
+        log(typeof NaN);
+        console.log(typeof product);
+        console.log(typeof product.available);
+        console.log(typeof f);
+        console.log("----");
+        console.log(arr.length);
+        console.log(arr[2]);
+        console.log(product.colors[1]);
+        console.log("----");
+        console.log(!a);
+        console.log(!!a);
+        console.log(Boolean(a));
+        console.log(Boolean(product));
+        console.log(Boolean(product) === !!product);
+        console.log("----");
+        log("before load => #title_main =>");
+        log(byId("title_main"));
+        // window.onload = function() {
+        //     alert("after load => #title_main =>");
+        //     log(byId("title_main"));
+        // }
+    </script>
+</head>
+<body>
+    <h1 id="title_main" class="title">JS - Révisions II</h1>
+    <p>
+        Rappel :
+    </p>
+    <ul>
+        <li>log === debug === important</li>
+        <li>documentation (mdn, w3c, caniuse) === important</li>
+    </ul>
+    <p>
+        Points clés abordés :
+    </p>
+    <ol>
+        <li>variables</li>
+        <li>types</li>
+        <li>NaN !== NaN</li>
+        <li>truthy / falsy</li>
+        <li>operators</li>
+        <li>function</li>
+        <li>function : exécution</li>
+        <li>function => param</li>
+        <li>function => return (defaut || instruction)</li>
+        <li>portée des variables (function)</li>
+        <li>function : IIFE</li>
+        <li>objets littéraux : var o = <b>{ }</b></li>
+        <li>objets.propriété(s) : o.prop || o["propBis"]</li>
+        <li>conditions (if / else if / else)</li>
+        <li>boucles for / while</li>
+        <li>window === this</li>
+        <li>this !== this</li>
+        <li>window.onload</li>
+        <li>document.getElementById</li>
+        <li>document.querySelector</li>
+        <li>document.querySelectorAll</li>
+        <li>element (htmlElements)</li>
+        <li>element.property</li>
+        <li>element.onclick</li>
+        <li>element.classList (api)</li>
+        <li>element.className</li>
+    </ol>
+    <input type="text" id="saisie_user" size="10">
+    <button id="action" class="btn">click me !</button>
+    <section id="tp" class="is-hidden">
+        <h2 class="title">TP</h2>
+        <p>
+            Imaginez et rédigez un petit programme web.<br>
+            Essayez de mettre en pratique le maximum des points listés ci-dessus.<br><b>Vous avez carte blanche.</b><br>Durée du TP: <b>1h30</b>.<br>(ou jusqu'à la pause si les révisions ont durées que prévu : )<br>
+            Vous pouvez me soliciter pour obtenir des <i>pistes</i> de recherche.<br>
+            Nombre de tirages au sort pour présenter le code : <b>5</b>.
+        </p>
+    </section>
+</body>
+</html>
